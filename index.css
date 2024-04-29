@@ -104,4 +104,15 @@ body {
     background-color: #18254c;
     border: 1px solid #8794ba;
     border-radius: 3px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.header-main {
+    margin: 0;
+    margin-left: 425px;
+    margin-top: 45px;
+    font-size: 40px;
 }
