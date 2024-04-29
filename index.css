@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: Cursed;
+    color: #FFFF;
+    background: #19244d;
+}
+
+@font-face {
+    font-family: Cursed;
+    src: url(CursedTimerUlil-Aznm.ttf);
+}
+
+.container {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-3 {
+    margin: 0;
+    font-size: 40px;
+}
+
+#h3-home {
+    margin-left: 40px;
+}
+
+#h3-guest {
+    margin-left: 29px;
+}
+
+.home-score {
+    margin-top: 18px;
+    padding-top: 10px;
+    border-radius: 6px;
+    width: 175px;
+    height: 90px;
+    background: #000000;
+}
+
+.guest-score {
+    margin-top: 18px;
+    padding-top: 10px;
+    border-radius: 6px;
+    width: 175px;
+    height: 90px;
+    background: #000000;
+}
+
+#score-value-1, #score-value-2 {
+    font-family: Cursed;
+    font-size: 80px;
+    margin: 0;
+    margin-left: 62.5px;
+    color: #f8506c;   
+}
+
+.plus-one {
+    color: #8794ba;
+    width: 45px;
+    height: 45px;
+    background-color: #18254c;
+    border: 1px solid #8794ba;
+    border-radius: 6px;
+    font-family: Cursed;
+}
+
+.plus-two {
+    color: #8794ba;
+    width: 45px;
+    height: 45px;
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color: #18254c;
+    border: 1px solid #8794ba;
+    border-radius: 6px;
+    font-family: Cursed;
+}
+
+.plus-three {
+    color: #8794ba;
+    width: 45px;
+    height: 45px;
+    background-color: #18254c;
+    border: 1px solid #8794ba;
+    border-radius: 6px;
+    font-family: Cursed;
+}
+
+.three-btns{
+    margin-top: 26px;
+    margin-left: 10px;
+}
+
+.new-game {
+    width: 100px;
+    margin: 0;
+    margin-left: -45px;
+    margin-top: 40px;
+    left: 50%;
+    position: absolute;
+    color: #8794ba;
+    font-family: Cursed;
+    background-color: #18254c;
+    border: 1px solid #8794ba;
+    border-radius: 3px;
+}
