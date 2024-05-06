@@ -49,6 +49,7 @@ function plusThree(team) {
     }
 }
 
-function refreshPage(){
-    window.location.reload();
+function clearInput(){
+    homeScore.textContent = 0
+    guestScore.textContent = 0
 } 
