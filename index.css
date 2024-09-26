@@ -1,8 +1,7 @@
-body {
+* {
     margin: 0;
-    font-family: Cursed;
-    color: #FFFF;
-    background: #19244d;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 @font-face {
@@ -10,132 +9,174 @@ body {
     src: url(CursedTimerUlil-Aznm.ttf);
 }
 
+body {
+    min-width: 375px;
+    padding: 0.5em;
+    font-family: Cursed;
+    color: #FFFF;
+    background: #19244d;
+}
+
+.header-main {
+    color: #f8506c;
+    font-size: 1.75rem;
+    text-align: center;
+}
+
 .container {
-    margin-top: 60px;
+    margin-top: 1em;
+    padding: 1em 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
+    gap: 1rem;
 }
 
 .header-3 {
-    margin: 0;
-    font-size: 40px;
-}
-
-#h3-home {
-    margin-left: 40px;
-}
-
-#h3-guest {
-    margin-left: 29px;
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 0.35em;
 }
 
 .home-score {
-    margin-top: 18px;
-    padding-top: 10px;
     border-radius: 6px;
-    width: 175px;
-    height: 90px;
     background: #000000;
 }
 
 .guest-score {
-    margin-top: 18px;
-    padding-top: 10px;
     border-radius: 6px;
-    width: 175px;
-    height: 90px;
     background: #000000;
 }
 
 #score-value-1, #score-value-2 {
     font-family: Cursed;
-    font-size: 80px;
-    margin: 0;
-    margin-left: 62.5px;
+    padding: 0.15em 0;
+    font-size: 4rem;
+    text-align: center;
     color: #f8506c;   
 }
 
-.plus-one {
+.plus-one, .plus-two, .plus-three  {
     color: #8794ba;
-    width: 45px;
-    height: 45px;
+    font-size: 1rem;
+    padding: 1em 0.75em;
     background-color: #18254c;
     border: 1px solid #8794ba;
     border-radius: 6px;
     font-family: Cursed;
 }
 
-.plus-two {
-    color: #8794ba;
-    width: 45px;
-    height: 45px;
-    margin-left: 5px;
-    margin-right: 5px;
-    background-color: #18254c;
-    border: 1px solid #8794ba;
-    border-radius: 6px;
-    font-family: Cursed;
-}
-
-.plus-three {
-    color: #8794ba;
-    width: 45px;
-    height: 45px;
-    background-color: #18254c;
-    border: 1px solid #8794ba;
-    border-radius: 6px;
-    font-family: Cursed;
+.plus-one:hover, .plus-two:hover, .plus-three:hover {
+    background-color: #f8506c;
+    transition: 0.2s ease-in-out;
 }
 
 .three-btns{
-    margin-top: 26px;
-    margin-left: 10px;
+    padding: 1em 0;
 }
 
-.new-game {
-    width: 100px;
-    margin: 0;
-    margin-left: -45px;
-    margin-top: 40px;
-    left: 50%;
-    position: absolute;
+.new-game,.new-game-2 {
     color: #8794ba;
     font-family: Cursed;
+    font-size: 1rem;
     background-color: #18254c;
     border: 1px solid #8794ba;
     border-radius: 3px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 1em 1.5em;
 }
 
-.header-main {
-    margin: 0 auto;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: row;
-    align-self: center;
-    justify-content: center;
-    font-size: 30px;
+.new-game:hover, .new-game-2:hover {
+    background-color: #f8506c;
+    transition: 0.3s ease-in-out;
 }
 
-@media only screen and (max-width: 600px) {
-    body {
+.btn {
+    display: none;
+}
+
+/* Media Queries */
+
+/* xs */
+@media (min-width: 475px) {
+
+   .container {
+        margin-top: 1.75em;
+   }
+
+   #score-value-1, #score-value-2 {
+        font-size: 4.25rem;
+   }
+
+   .plus-one, .plus-two, .plus-three {
+        font-size: 1.2rem;
+   }
+
+   .new-game {
+    font-size: 1.2rem;
+   }
+}
+
+/* sm */
+@media (min-width: 640px) {
+   .header-main {
+        font-size: 2.5rem;
+   } 
+
+   .container {
         margin: 0 auto;
-        margin-top: 150px;
-        zoom: 75%;
-    }
+        width: 100%;
+        height: 300px;
+        position: initial;
+        top: initial;
+        left: initial;
+        transform: initial;
+        flex-direction: row;
+   }
 
-    .header-main {
-        font-size: 27px;
-    }
+   .three-btns {
+        display: flex;
+        justify-content: space-around;
+        gap: 1em;
+   }
 
-    .home-container, .guest-container {
-        font-size: 16px;
-    }
+   .header-3 {
+        font-size: 2rem;
+   }
 
-    #h3-home, #h3-guest {
-        font-size: 30px;
-    }
-}    
+   #score-value-1, #score-value-2 {
+        font-size: 4.75rem;
+   }
+
+   .plus-one, .plus-two, .plus-three {
+        font-size: 1.35rem;
+   }
+
+   .new-game {
+        display: none;
+   }
+
+   .btn {
+        display: flex;
+        justify-content: center;
+   }
+
+   .new-game-2 {
+        font-size: 1.35rem;
+   }
+}
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+/* @media (min-width: 1024px) {} */
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */

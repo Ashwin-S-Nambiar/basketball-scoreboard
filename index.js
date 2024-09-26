@@ -2,8 +2,7 @@ let homeScore = document.getElementById("score-value-1")
 let guestScore = document.getElementById("score-value-2")
 let hcount = 0
 let gcount = 0
-// console.log("Home: " + homeScore.textContent)
-// console.log("Guest: " + guestScore.textContent)
+
 function plusOne(team) {
     if (team == "home") {
         let count = 0
