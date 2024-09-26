@@ -10,7 +10,6 @@ Live: https://basketball-scoreboard-gt.netlify.app/
 
 ## 📷 Screenshots:
 
-![image](https://github.com/Ashwin-S-Nambiar/basketball-scoreboard-html-css-js/assets/76719333/89a0eeb1-ea95-40f2-9391-5ffc2ebf551d)
+![basketball](https://github.com/user-attachments/assets/284b5e72-d4f5-4627-ba41-1378a3979be9)
 
-![image](https://github.com/Ashwin-S-Nambiar/basketball-scoreboard-html-css-js/assets/76719333/66db2043-8255-480e-b193-8d0e93494a10)
 
