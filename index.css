@@ -58,6 +58,7 @@ body {
     font-size: 4rem;
     text-align: center;
     color: #f8506c;   
+    user-select: none;
 }
 
 .plus-one, .plus-two, .plus-three  {
@@ -68,6 +69,7 @@ body {
     border: 1px solid #8794ba;
     border-radius: 6px;
     font-family: Cursed;
+    user-select: none;
 }
 
 .plus-one:hover, .plus-two:hover, .plus-three:hover {
@@ -87,6 +89,7 @@ body {
     border: 1px solid #8794ba;
     border-radius: 3px;
     padding: 1em 1.5em;
+    user-select: none;
 }
 
 .new-game:hover, .new-game-2:hover {
