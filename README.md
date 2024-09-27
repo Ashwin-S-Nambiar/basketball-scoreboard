@@ -1,5 +1,5 @@
 # 🏀 Basketball Scoreboard
-Live: https://basketball-scoreboard-gt.netlify.app/
+**Live: https://basketball-scoreboard-gt.netlify.app/**
 
 ***A Basketball Scoreboard which includes scores for both Home and Guest teams as well as a button to reset the scores when it's a new game. Has buttons to increment scores +1, +2 and +3 and "New Game" button to reset the scores.***
 
